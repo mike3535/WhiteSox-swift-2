@@ -16,6 +16,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        //get pList
+        let path = NSBundle.mainBundle().pathForResource("Chicago White Sox", ofType: "plist")
+        let array = NSArray(contentsOfFile: path!) as! [AnyObject]
+        
+        
+        let navigationController = self.window!.rootViewController as! UINavigationController
+        let mainController = navigationController.childViewControllers[0] as! PlayerListViewController
+        
+        var player: Player
+        
+        for dict in array {
+            let number = dict["Number"]
+            let firstName = dict["First Name"]
+            let lastName = dict["Last Name"]
+            let pos = dict["Position"]
+            let bats = dict["Bats"]
+            let throws = dict["Throws"]
+            let height = dict["Height"]
+            let weight = dict["Weight"]
+            let birthDate = dict["DOB"]
+            
+            
+            player = Player()
+            player.number = number as! String
+            player.firstName = firstName as! String
+            player.lastName = lastName as! String
+            player.pos = pos as! String
+            player.bats = bats as! String
+            player.throws = throws as! String
+            player.height = height as! String
+            player.weight = weight as! String
+            player.birthDate = birthDate as! String
+            
+            
+            mainController.objects.append(player)
+        }
+        
+       
+        
+    
+        
+        //var sortedArray = sorted(mainController.objects){$0.lastName < $1.lastName}// -> Bool in
+        //   return o1.lastName == o2.lastName ? (o1.firstName < o2.firstName) : (o1.lastName < o2.lastName)})
+        
+        
+      
+        //sort UITable
+           mainController.objects.sort({ $0.lastName < $1.lastName })
+       
+        
+        //reload sorted data
+        dispatch_async(dispatch_get_main_queue()) {
+            (mainController.view as! UITableView).reloadData()
+        }
+        
         return true
     }
 

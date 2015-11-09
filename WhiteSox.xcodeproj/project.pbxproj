@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8BDFA571BED94D900D3E2CC /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8BDFA561BED94D900D3E2CC /* placeholder.jpg */; };
 		A8FAA5EE1BE98C9A00F9F6FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAA5ED1BE98C9A00F9F6FF /* AppDelegate.swift */; };
-		A8FAA5F01BE98C9A00F9F6FF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAA5EF1BE98C9A00F9F6FF /* MasterViewController.swift */; };
-		A8FAA5F21BE98C9A00F9F6FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAA5F11BE98C9A00F9F6FF /* DetailViewController.swift */; };
+		A8FAA5F01BE98C9A00F9F6FF /* PlayerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAA5EF1BE98C9A00F9F6FF /* PlayerListViewController.swift */; };
+		A8FAA5F21BE98C9A00F9F6FF /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAA5F11BE98C9A00F9F6FF /* PlayerDetailViewController.swift */; };
 		A8FAA5F51BE98C9A00F9F6FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FAA5F31BE98C9A00F9F6FF /* Main.storyboard */; };
 		A8FAA5F71BE98C9A00F9F6FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8FAA5F61BE98C9A00F9F6FF /* Images.xcassets */; };
 		A8FAA5FA1BE98C9A00F9F6FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FAA5F81BE98C9A00F9F6FF /* LaunchScreen.xib */; };
 		A8FAA6061BE98C9A00F9F6FF /* WhiteSoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAA6051BE98C9A00F9F6FF /* WhiteSoxTests.swift */; };
+		A8FAA6101BE9913B00F9F6FF /* Chicago White Sox.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8FAA60F1BE9913B00F9F6FF /* Chicago White Sox.plist */; };
+		A8FAA6121BE992AF00F9F6FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAA6111BE992AF00F9F6FF /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +30,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8BDFA561BED94D900D3E2CC /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		A8FAA5E81BE98C9A00F9F6FF /* WhiteSox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteSox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FAA5EC1BE98C9A00F9F6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8FAA5ED1BE98C9A00F9F6FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8FAA5EF1BE98C9A00F9F6FF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		A8FAA5F11BE98C9A00F9F6FF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A8FAA5EF1BE98C9A00F9F6FF /* PlayerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListViewController.swift; sourceTree = "<group>"; };
+		A8FAA5F11BE98C9A00F9F6FF /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		A8FAA5F41BE98C9A00F9F6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8FAA5F61BE98C9A00F9F6FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A8FAA5F91BE98C9A00F9F6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A8FAA5FF1BE98C9A00F9F6FF /* WhiteSoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteSoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FAA6041BE98C9A00F9F6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8FAA6051BE98C9A00F9F6FF /* WhiteSoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteSoxTests.swift; sourceTree = "<group>"; };
+		A8FAA60F1BE9913B00F9F6FF /* Chicago White Sox.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Chicago White Sox.plist"; sourceTree = "<group>"; };
+		A8FAA6111BE992AF00F9F6FF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +86,14 @@
 			isa = PBXGroup;
 			children = (
 				A8FAA5ED1BE98C9A00F9F6FF /* AppDelegate.swift */,
-				A8FAA5EF1BE98C9A00F9F6FF /* MasterViewController.swift */,
-				A8FAA5F11BE98C9A00F9F6FF /* DetailViewController.swift */,
+				A8FAA6111BE992AF00F9F6FF /* Player.swift */,
+				A8FAA5EF1BE98C9A00F9F6FF /* PlayerListViewController.swift */,
+				A8FAA5F11BE98C9A00F9F6FF /* PlayerDetailViewController.swift */,
 				A8FAA5F31BE98C9A00F9F6FF /* Main.storyboard */,
 				A8FAA5F61BE98C9A00F9F6FF /* Images.xcassets */,
+				A8BDFA561BED94D900D3E2CC /* placeholder.jpg */,
 				A8FAA5F81BE98C9A00F9F6FF /* LaunchScreen.xib */,
+				A8FAA60F1BE9913B00F9F6FF /* Chicago White Sox.plist */,
 				A8FAA5EB1BE98C9A00F9F6FF /* Supporting Files */,
 			);
 			path = WhiteSox;
@@ -159,6 +168,7 @@
 		A8FAA5E01BE98C9A00F9F6FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Mike Rizza";
 				TargetAttributes = {
@@ -197,6 +207,8 @@
 			files = (
 				A8FAA5F51BE98C9A00F9F6FF /* Main.storyboard in Resources */,
 				A8FAA5FA1BE98C9A00F9F6FF /* LaunchScreen.xib in Resources */,
+				A8FAA6101BE9913B00F9F6FF /* Chicago White Sox.plist in Resources */,
+				A8BDFA571BED94D900D3E2CC /* placeholder.jpg in Resources */,
 				A8FAA5F71BE98C9A00F9F6FF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8FAA5F21BE98C9A00F9F6FF /* DetailViewController.swift in Sources */,
-				A8FAA5F01BE98C9A00F9F6FF /* MasterViewController.swift in Sources */,
+				A8FAA5F21BE98C9A00F9F6FF /* PlayerDetailViewController.swift in Sources */,
+				A8FAA6121BE992AF00F9F6FF /* Player.swift in Sources */,
+				A8FAA5F01BE98C9A00F9F6FF /* PlayerListViewController.swift in Sources */,
 				A8FAA5EE1BE98C9A00F9F6FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +426,7 @@
 				A8FAA60B1BE98C9A00F9F6FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8FAA60C1BE98C9A00F9F6FF /* Build configuration list for PBXNativeTarget "WhiteSoxTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +435,7 @@
 				A8FAA60E1BE98C9A00F9F6FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
