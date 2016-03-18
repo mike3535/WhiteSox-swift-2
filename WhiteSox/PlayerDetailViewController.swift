@@ -41,7 +41,7 @@ class PlayerDetailViewController: UIViewController {
                 label.text = "\(detail.number) | \(detail.pos)"
             }
             if let label = self.batsLabel {
-                label.text = "\(detail.bats) / \(detail.throws)"
+                label.text = "\(detail.bats) / \(detail.hand)"
             }
             if let label = self.heightLabel{
                 label.text = detail.height

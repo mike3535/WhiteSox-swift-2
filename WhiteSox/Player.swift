@@ -15,7 +15,7 @@ class Player{
     var lastName: String = ""
     var pos: String = ""
     var bats: String = ""
-    var throws: String = ""
+    var hand: String = ""
     var height: String = ""
     var weight: String = ""
     var birthDate: String = ""

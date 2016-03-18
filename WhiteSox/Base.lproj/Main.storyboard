@@ -136,19 +136,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugC-Eb-KJp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugC-Eb-KJp">
                                 <rect key="frame" x="273" y="72" width="53" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfo-08-3aU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number | Position" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfo-08-3aU">
                                 <rect key="frame" x="279" y="115" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Sox-180" translatesAutoresizingMaskIntoConstraints="NO" id="pIN-fS-Z2R">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Sox-180" translatesAutoresizingMaskIntoConstraints="NO" id="pIN-fS-Z2R">
                                 <rect key="frame" x="160" y="155" width="280" height="176"/>
                             </imageView>
                         </subviews>
@@ -163,20 +163,37 @@
                             <constraint firstAttribute="trailingMargin" secondItem="l7x-L9-UMh" secondAttribute="trailing" constant="4" id="Fic-qo-AHP"/>
                             <constraint firstItem="l7x-L9-UMh" firstAttribute="top" secondItem="Zny-ib-dPF" secondAttribute="bottom" constant="8.5" id="GaU-Cn-skX"/>
                             <constraint firstItem="OKD-7g-Sbi" firstAttribute="top" secondItem="EVa-zv-8hE" secondAttribute="bottom" constant="8" id="Lic-e8-4l5"/>
+                            <constraint firstItem="pIN-fS-Z2R" firstAttribute="top" secondItem="Qfo-08-3aU" secondAttribute="bottom" constant="44.5" id="MUd-ec-O8X"/>
                             <constraint firstItem="Ely-cC-ToY" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leadingMargin" id="MVS-rw-EnI"/>
-                            <constraint firstItem="pIN-fS-Z2R" firstAttribute="top" secondItem="Qfo-08-3aU" secondAttribute="bottom" constant="19.5" id="RLv-ZD-MyD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ure-bd-Gi2" secondAttribute="trailing" constant="4" id="RxS-Cc-eAx"/>
                             <constraint firstItem="Zny-ib-dPF" firstAttribute="top" secondItem="Ure-bd-Gi2" secondAttribute="bottom" constant="7.5" id="TZn-d9-u1P"/>
                             <constraint firstItem="OKD-7g-Sbi" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leadingMargin" id="Wst-PP-Nw7"/>
                             <constraint firstItem="Ure-bd-Gi2" firstAttribute="top" secondItem="yaU-55-Rp2" secondAttribute="bottom" constant="8.5" id="ZZe-uk-u50"/>
                             <constraint firstItem="h88-sg-SiM" firstAttribute="top" secondItem="OKD-7g-Sbi" secondAttribute="bottom" constant="8" id="Zxe-fQ-Oea"/>
                             <constraint firstAttribute="centerX" secondItem="ugC-Eb-KJp" secondAttribute="centerX" id="eaL-XM-bPB"/>
+                            <constraint firstItem="pIN-fS-Z2R" firstAttribute="top" secondItem="Qfo-08-3aU" secondAttribute="bottom" constant="19.5" id="eaR-R6-AtA"/>
                             <constraint firstItem="Qfo-08-3aU" firstAttribute="top" secondItem="ugC-Eb-KJp" secondAttribute="bottom" constant="16.5" id="sNP-J7-jrb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zny-ib-dPF" secondAttribute="trailing" constant="4" id="tAb-Sn-8mi"/>
                             <constraint firstItem="ugC-Eb-KJp" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="8" id="x8a-Ue-pwt"/>
                             <constraint firstAttribute="centerX" secondItem="pIN-fS-Z2R" secondAttribute="centerX" id="z5S-4I-jU2"/>
                             <constraint firstItem="a0L-h9-sNL" firstAttribute="top" secondItem="l7x-L9-UMh" secondAttribute="bottom" constant="82.5" id="zlV-vL-uJG"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MUd-ec-O8X"/>
+                                <exclude reference="eaR-R6-AtA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="eaR-R6-AtA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="MUd-ec-O8X"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Player Details" id="cra-N8-TIN"/>
                     <connections>

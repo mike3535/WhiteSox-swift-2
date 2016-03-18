@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let lastName = dict["Last Name"]
             let pos = dict["Position"]
             let bats = dict["Bats"]
-            let throws = dict["Throws"]
+            let hand = dict["Throws"]
             let height = dict["Height"]
             let weight = dict["Weight"]
             let birthDate = dict["DOB"]
@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             player.lastName = lastName as! String
             player.pos = pos as! String
             player.bats = bats as! String
-            player.throws = throws as! String
+            player.hand = hand as! String
             player.height = height as! String
             player.weight = weight as! String
             player.birthDate = birthDate as! String
@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
       
         //sort UITable
-           mainController.objects.sort({ $0.lastName < $1.lastName })
+           mainController.objects.sortInPlace({ $0.lastName < $1.lastName })
        
         
         //reload sorted data
